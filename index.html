@@ -12,32 +12,34 @@
     <h1>Calculator</h1>
     <section>   
 
-    <div class="screen">0</div>
+    <input type="text" id="screen">
 
     <div class="flex-container">
         
-        <div class="button">%</div>
-        <div class="button">CE</div>
-        <div class="button"> back</div>
-        <div class="button">/</div>
-        <div class="button">7</div>
-        <div class="button">8</div>
-        <div class="button">9</div>
-        <div class="button">*</div>
-        <div class="button">4</div>
-        <div class="button">5</div>
-        <div class="button">6</div>
-        <div class="button">-</div>
-        <div class="button">1</div>
-        <div class="button">2</div>
-        <div class="button">3</div>
-        <div class="button">+</div>
-        <div class="button">+/-</div>
-        <div class="button">0</div>
-        <div class="button">,</div>
-        <div class="button">=</div>
+        <input class="button operator" type="button" value="%">
+        <input class="button clear"    type="button" value="AC" onclick="screenReset()">
+        <input class="button delete"   type="button" value="back">
+        <input class="button operator" type="button" value="/" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="7" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="8" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="9" onclick="btnClick(value)">        
+        <input class="button operator" type="button" value="*" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="4" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="5" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="6" onclick="btnClick(value)">
+        <input class="button operator" type="button" value="-" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="1" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="2" onclick="btnClick(value)">
+        <input class="button number"   type="button" value="3" onclick="btnClick(value)">
+        <input class="button operator" type="button" value="+" onclick="btnClick(value)">
+        <input class="button poz_neg"  type="button" value="+/-">
+        <input class="button number"   type="button" value="0" onclick="btnClick(value)">
+        <input class="button dot"      type="button" value=",">
+        <input class="button result"   type="button" value="=" onclick="eredmeny(value)">
+        
         
     </div>
+
     </section>
 
     <script src="calculator.js"></script>
